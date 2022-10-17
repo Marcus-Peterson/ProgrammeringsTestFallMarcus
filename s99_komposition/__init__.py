@@ -23,7 +23,7 @@ class UserInformation(User):
     
 
 
-user_1 = User("Kalle", "Pannkakor123*")
+user_1 = User(user="Kalle", password="Pannkakor123*")
 user_1.favorite_activites = "Gymma"
 user_1.favorite_foods = "spaghetti"
 user_1.parents = True
@@ -41,5 +41,5 @@ class TestUserClass(unittest.TestCase,User):
         invalid = ''.join(map(str, invalid_symbols))
         assert invalid_symbols not in index_of_user, f"you are using invalid symbols:{invalid}"
 
-
+print(user_1)
 
