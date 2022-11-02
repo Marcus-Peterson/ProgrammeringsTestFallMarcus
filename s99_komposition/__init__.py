@@ -23,7 +23,7 @@ class UserInformation(User):
     
 
 
-user_1 = User(user="Kalle", password="Pannkakor123*")
+user_1 = User(user="Kalle", password="Pannkakor123")
 user_1.favorite_activites = "Gymma"
 user_1.favorite_foods = "spaghetti"
 user_1.parents = True
